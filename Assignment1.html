@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+ function knoppie(){
+   var invoer = document.getElementById("input").value;
+   
+   var x = 0;
+
+   if(invoer.includes('e')){
+    alert("this string contains the letter 'e' ")
+    for (var i = 0; i < invoer.length; i++ ){
+        console.log(invoer.charAt(i));
+       console.log(i);
+       if(invoer.charAt(i)=="e"){
+        console.log("yes we hebben een e" )
+        x ++;
+       }
+
+    }
+   
+   
+    
+    }
+
+   else{
+    alert("this word does not contain the letter 'e'")
+   }
+   console.log(x);
+   }
+   
+    </script>
+</head>
+<body>
+     <input type="button" value="klik hier" onclick="knoppie()"/>
+  <br>
+  <input type="text" id="input">
+  <br>
+</body>
+</html>

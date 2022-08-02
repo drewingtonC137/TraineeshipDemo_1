@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+var output = "";
+function AddA(button){
+   // alert(button);
+    output = output + "You pressed: <b> "+button+"</b> <br>" ;
+   document.getElementById("A").innerHTML= output;
+}
+   
+    </script>
+</head>
+<body>
+    <input type="button" value="A" onclick="AddA('A')">
+    <input type="button" value="B" onclick="AddA('B')">
+    <input type="button" value="C" onclick="AddA('C')">
+    <input type="button" value="D" onclick="AddA('D')">
+    <div id="A">you pressed</div>
+</body>
+</html>

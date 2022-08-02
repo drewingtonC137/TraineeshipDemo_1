@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+//verbose boiler plate code PYTHON
+
+      function denaamfunctie(){
+   var invoer = document.getElementById("abracadabra").value;
+   var elem = document.getElementById("korter");
+
+   if(invoer <= 15 ){
+    //alert("Je mag geen alcohol nuttigen")
+    document.getElementById("korter").innerHTML= "Je mag geen alcohol nuttigen";
+    elem.style.backgroundColor = "red";
+   }
+   else if( invoer == 16 || invoer == 17){
+    //alert("je mag bier en fris")
+    document.getElementById("korter").innerHTML= "je mag bier en fris";
+    elem.style.backgroundColor = "orange";
+   }
+   else{
+    //alert("Prima");
+    document.getElementById("korter").innerHTML= "Prima";
+    elem.style.backgroundColor = "green";
+   }
+   getal = parseInt (invoer);
+   console.log(getal + getal);
+    }
+
+  </script>
+
+</head>
+<body>
+    Hoe oud ben je?
+
+  <input type="button" value="klik hier" onclick="denaamfunctie()"/>
+  <br>
+  <input type="text" id="abracadabra">
+  <br>
+  <div id="korter"> Welkom</div>
+</body>
+</html>
